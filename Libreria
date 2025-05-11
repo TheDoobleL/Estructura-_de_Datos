@@ -1,0 +1,25 @@
+
+from metodos_ordenamiento import (
+    burbuja,
+    heapsort,
+    insercion,
+    quicksort,
+    radix,
+    seleccion,
+    shellsort
+)
+
+
+arr = [170, 45, 75, 90, 802, 24, 2, 66]
+
+print("\n=== Resultados de Ordenamiento ===")
+print(f"Original: {arr}")
+
+
+print(f"\nBurbuja:   {burbuja(arr.copy())}")
+print(f"Inserción: {insercion(arr.copy())}")  
+print(f"Selección: {seleccion(arr.copy())}")  
+print(f"ShellSort: {shellsort(arr.copy())}")
+print(f"Quicksort: {quicksort(arr.copy())}")  
+print(f"Heapsort:  {heapsort(arr.copy())}")  
+print(f"Radix:     {radix(arr.copy())}")      
